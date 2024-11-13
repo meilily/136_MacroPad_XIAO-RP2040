@@ -23,13 +23,13 @@
 ## Overview
 
 If the Macro Pad has only a few keys, circuitpython is one of the easiest way to use because it does not require compile for execution and does not require building development environment for configuration changes. Since the microcontroller is recognized as a USB drive, you can change key assignments easily by editing with your favorite text editor. On the other hand, it is possible to disable recognition as a USB drive at startup, to avoid extra warning messages on the Mac.
-For hardware, XIAO RP2040 is recommended to use because it is small footprint, low cost, and USB-C connector.  It is better than Pro Micro that is widely used in DIY keyboard community.
+For hardware, [Seeed Studio XIAO RP2040](https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html) is recommended to use because its small footprint, low cost, and USB-C connector.  It is better than Pro Micro that is widely used in DIY keyboard community.
 
 This macro pad features a single 3.5mm TRRS compatible accessibility port. For example, it can accommodate any switch, including footswitches and emergency switches.
 
 More details.
 - The software runtime environment is circuitpython provided by Adafruit.
-- Since CircuitPythin can recognize the RP2040 as a USB Mass Storage, it is possible to change key assignments using only text edtior.
+- Since CircuitPythin can recognize the RP2040 as a USB Mass Storage, it is possible to change key assignments using only text editor.
 - However, if the RP2040 is recognized as a USB drive every time, it may cause problems such as changing the configuration file by mistake or displaying a warning message in the case of MacOS.
 - Therefore, I made it possible to operate only as a USB Keyboard without enabling the USB Mass Storage function in the switch state.  For more details on the technology, click here.
 [https://learn.adafruit.com/circuitpython-essentials/circuitpython-storage]
